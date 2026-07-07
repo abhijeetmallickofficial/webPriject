@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #ffe6f0;
+        }
+
+        #message {
+            display: none;
+            font-size: 40px;
+            color: red;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        a {
+            font-size: 24px;
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#" onclick="showLove(); return false;">Click Here ❤️</a>
+
+    <div id="message">❤️ I Love You ❤️</div>
+
+    <script>
+        function showLove() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
